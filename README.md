@@ -52,6 +52,13 @@ sudo pacman -S python-dbus-fast python-pywayland python-xkbcommon
 
 Depending on the use case, three different installation options are outlined below.
 
+To install a specific commit, tag or branch, append `@<commit-hash>`, `@<tag>` or `<branch-name>` to the Git URL in the pip requirement, after `.git`.
+For example, replace `<tag-commit-or-branch>` with the desired tag name, commit hash or branch name:
+
+```sh
+python3 -m pip install --user 'xdg-desktop-portal-pyrtal[remote-desktop] @ git+https://github.com/hifi/xdg-desktop-portal-pyrtal.git@<tag-commit-or-branch>'
+```
+
 #### Install as user
 
 Install pyrtal directly from Git with pip:
