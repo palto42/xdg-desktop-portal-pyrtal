@@ -6,7 +6,7 @@ authors = [
     { name = "Toni Spets (hifi)", email = "toni.spets@iki.fi" }
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
     "dbus-fast>=5.0.22",
 ]
