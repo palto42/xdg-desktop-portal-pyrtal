@@ -312,7 +312,7 @@ async def main():
             logger.error("Error calling %s: %s", args.command, reply.body[0])
 
 
-if __name__ == "__main__":
+def run():
     if os.geteuid() == 0:
         print("Pyrtal is not supposed to be run as root")
         sys.exit(1)
@@ -320,3 +320,7 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         pass
+
+
+if __name__ == "__main__":
+    run()
